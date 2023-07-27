@@ -1006,6 +1006,20 @@ Services Style
   margin-bottom: 60px;
 }
 
+.our-services .progress-skill-bar {
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.our-services .progress-skill-bar span {
+  position: absolute;
+  top: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #03a4ed;
+}
+
 .our-services .first-bar span {
   left: 69%;
 }
@@ -1018,45 +1032,31 @@ Services Style
   left: 88%;
 }
 
-.progress-skill-bar {
-  margin-bottom: 30px;
-}
-
-.progress-skill-bar h4 {
+.our-services .progress-skill-bar h4 {
   font-size: 18px;
-  margin-bottom: 10px;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 14px;
 }
 
-.progress-skill-bar span {
-  font-size: 16px;
-  font-weight: bold;
+.our-services .progress-skill-bar .full-bar {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #f7eff1;
+  position: relative;
+  z-index: 1;
 }
 
-.progress-skill-bar .filled-bar {
-  background-color: #007bff; /* Change the color of the filled part */
-  height: 10px;
-  width: 0;
+.our-services .progress-skill-bar .filled-bar {
+  background: rgb(255,77,30);
+  background: linear-gradient(105deg, rgba(255,77,30,1) 0%, rgba(255,44,109,1) 100%);
+  height: 6px;
+  border-radius: 3px;
+  margin-bottom: -6px;
+  position: relative;
+  z-index: 2;
 }
-
-.progress-skill-bar .full-bar {
-  background-color: #e0e0e0; /* Change the color of the full bar */
-  height: 10px;
-}
-
-/* Animation to fill the progress bar */
-@keyframes fill-progress {
-  0% { width: 0; }
-}
-
-/* Animate the progress bar */
-.progress-skill-bar .filled-bar {
-  animation: fill-progress 2s ease-in-out forwards;
-}
-
-/* Adjust the animation delay for each progress bar */
-.first-bar .filled-bar { animation-delay: 0s; }
-.second-bar .filled-bar { animation-delay: 0.2s; }
-.third-bar .filled-bar { animation-delay: 0.4s; }
 
 .our-services .first-bar .filled-bar {
   width: 80%;
